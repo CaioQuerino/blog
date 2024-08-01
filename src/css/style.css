@@ -51,6 +51,7 @@ body>header>input {
     border-radius: 8px;
     height: 56px;
     padding: 16px 24px;
+    color: var(--corFont1);
 }
 
 section {
@@ -95,9 +96,9 @@ article>p:nth-child(3) {
 }
 
 .icon-heart.filled {
-    content: url('assets/img/button-favorite.svg');
+    content: url(../../assets/img/button-favorite.svg);
 }
 
 .icon-heart:hover:not(.filled) {
-    content: url('assets/img/button-favorite.svg');
+    content: url(../../assets/img/button-favorite.svg);
 }

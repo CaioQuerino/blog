@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root{
+    --header: hsl(240, 6%, 10%);
+    --fundoInput: hsl(240, 6%, 13%);
+    --corFont1: hsl(262, 7%, 69%);
+    --corFont2: #fff;
+    --orange: hsl(10, 66%, 64%);
+    --body: hsl(240, 5%, 7%);
+    --corBorda: hsl(240, 5%, 15%);
+    --Font1: "Inter";
+    --font2: "Space Grotesk";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body{
+    background-color: var(--body);
+    color: var(--corFont2);
+    display: grid;
+}
+
+body>header{
+    background-color: var(--header);
+    min-height: 283px;
+    align-content: center;
+    padding: 64px 0;
+    gap: 48px;
+}
+
+body>header>h1>span{
+    color: var(--orange);
+}
+
+body>header>h1{
+    font: normal 500 40px var(--font2 51.04px);
+}
+
+body>header>input{
+    min-width:70%;
+    background-color: var(--fundoInput);
+    border: 2px solid var(--corBorda);
+    border-radius: 8px;
+    height: 56px;
+    padding: 16px 24px;
+}
+
+section{
+    background-color:  hsla(240, 6%, 13%, 0.158);
+    width: 68%;
+    justify-self: center;
+}
+
+article{
+    height: 243px;
+    background-color: var(--fundoInput);
+    margin-top: 32px;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+section>article>header>span:nth-child(1){
+    color: var(--orange);
+    font: normal 500 16px var(--Font1) 19.36px;
+}
+
+section>article>header:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+}
+
+article>h2:nth-child(2){
+    font: normal 500 24px var(--font2) 30.62px;
+}

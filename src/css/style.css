@@ -55,7 +55,6 @@ body>header>input {
 }
 
 section {
-    background-color: hsla(240, 6%, 13%, 0.158);
     width: 68%;
     justify-self: center;
     display: grid;

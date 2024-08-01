@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
-:root{
+:root {
     --header: hsl(240, 6%, 10%);
     --fundoInput: hsl(240, 6%, 13%);
     --corFont1: hsl(262, 7%, 69%);
@@ -14,20 +14,20 @@
     --font2: "Space Grotesk";
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border: none;
 }
 
-body{
+body {
     background-color: var(--body);
     color: var(--corFont2);
     display: grid;
 }
 
-body>header{
+body>header {
     background-color: var(--header);
     min-height: 283px;
     align-content: center;
@@ -35,16 +35,16 @@ body>header{
     gap: 48px;
 }
 
-body>header>h1>span{
+body>header>h1>span {
     color: var(--orange);
 }
 
-body>header>h1{
+body>header>h1 {
     font: normal 500 40px var(--font2 51.04px);
 }
 
-body>header>input{
-    min-width:70%;
+body>header>input {
+    min-width: 70%;
     background-color: var(--fundoInput);
     border: 2px solid var(--corBorda);
     border-radius: 8px;
@@ -52,13 +52,13 @@ body>header>input{
     padding: 16px 24px;
 }
 
-section{
-    background-color:  hsla(240, 6%, 13%, 0.158);
+section {
+    background-color: hsla(240, 6%, 13%, 0.158);
     width: 68%;
     justify-self: center;
 }
 
-article{
+article {
     height: 243px;
     background-color: var(--fundoInput);
     margin-top: 32px;
@@ -66,16 +66,34 @@ article{
     border-radius: 8px;
 }
 
-section>article>header>span:nth-child(1){
+section>article>header>span:nth-child(1) {
     color: var(--orange);
     font: normal 500 16px var(--Font1) 19.36px;
 }
 
-section>article>header:nth-child(1){
+section>article>header:nth-child(1) {
     display: flex;
     justify-content: space-between;
 }
 
-article>h2:nth-child(2){
+article>h2:nth-child(2) {
     font: normal 500 24px var(--font2) 30.62px;
+}
+
+article>p:nth-child(3) {
+    color: var(--corFont1);
+}
+
+.icon-heart {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.icon-heart.filled {
+    content: url('assets/img/button-favorite.svg');
+}
+
+.icon-heart:hover:not(.filled) {
+    content: url('assets/img/button-favorite.svg');
 }

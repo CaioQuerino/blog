@@ -26,7 +26,6 @@ body {
     color: var(--corFont2);
     display: grid;
     height: 100vh;
-    margin: 0 auto;
 }
 
 body>header {

@@ -25,6 +25,7 @@ body {
     background-color: var(--body);
     color: var(--corFont2);
     display: grid;
+    height: 100vh;
 }
 
 body>header {
@@ -56,10 +57,11 @@ section {
     background-color: hsla(240, 6%, 13%, 0.158);
     width: 68%;
     justify-self: center;
+    display: grid;
+    grid-template-columns: 100%;
 }
 
 article {
-    height: auto;
     background-color: var(--fundoInput);
     margin-top: 32px;
     padding: 40px;
